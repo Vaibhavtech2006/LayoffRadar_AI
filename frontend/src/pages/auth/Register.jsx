@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "../../components/common/AuthLayout";
 import InputField from "../../components/common/InputField";
 import PasswordField from "../../components/common/PasswordField";
-import { validateRegister } from "../../../../utils/validation";
+import { validateRegister } from "../../utils/validation";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -54,7 +54,6 @@ const Register = () => {
   return (
     <AuthLayout>
       <div className="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900/80 p-8 shadow-2xl backdrop-blur-md">
-
         <h1 className="text-3xl font-bold text-white">
           Create Account
         </h1>
@@ -64,7 +63,6 @@ const Register = () => {
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-
           <InputField
             label="Full Name"
             type="text"
@@ -121,9 +119,7 @@ const Register = () => {
               </Link>
             </p>
           </div>
-
         </form>
-
       </div>
     </AuthLayout>
   );

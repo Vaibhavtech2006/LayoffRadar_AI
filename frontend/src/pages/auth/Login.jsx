@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "../../components/common/AuthLayout";
 import InputField from "../../components/common/InputField";
 import PasswordField from "../../components/common/PasswordField";
-import { validateLogin } from "../../../../utils/validation";
+import { validateLogin } from "../../utils/validation";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const Login = () => {
     <AuthLayout>
       <div className="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900/80 p-8 shadow-2xl backdrop-blur-md">
         <h1 className="text-3xl font-bold text-white">
-          Welcome Back 
+          Welcome Back
         </h1>
 
         <p className="mt-2 text-slate-400">

@@ -64,11 +64,7 @@ const Sidebar = () => {
 
   return (
     <aside className="flex min-h-screen w-72 flex-col border-r border-slate-800 bg-slate-900">
-
-      {/* Logo */}
-
       <div className="border-b border-slate-800 p-6">
-
         <h1 className="text-2xl font-bold text-cyan-400">
           LayoffRadar AI
         </h1>
@@ -76,13 +72,9 @@ const Sidebar = () => {
         <p className="mt-1 text-sm text-slate-400">
           Early Warning System
         </p>
-
       </div>
 
-      {/* Navigation */}
-
       <nav className="flex-1 space-y-2 p-4">
-
         {menuItems.map((item) => {
           const Icon = item.icon;
 
@@ -99,29 +91,21 @@ const Sidebar = () => {
               }
             >
               <Icon size={20} />
-
               <span>{item.title}</span>
             </NavLink>
           );
         })}
-
       </nav>
 
-      {/* Logout */}
-
       <div className="border-t border-slate-800 p-4">
-
         <button
           onClick={handleLogout}
           className="flex w-full items-center gap-3 rounded-lg bg-red-600 px-4 py-3 font-medium text-white transition hover:bg-red-700"
         >
           <LogOut size={20} />
-
           Logout
         </button>
-
       </div>
-
     </aside>
   );
 };

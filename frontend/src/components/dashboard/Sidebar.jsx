@@ -25,16 +25,7 @@ const Sidebar = () => {
       path: "/company-analysis",
       icon: Building2,
     },
-    {
-      title: "AI Chat",
-      path: "/chat",
-      icon: Bot,
-    },
-    {
-      title: "Watchlist",
-      path: "/watchlist",
-      icon: Eye,
-    },
+  
     {
       title: "Alerts",
       path: "/alerts",
@@ -44,17 +35,8 @@ const Sidebar = () => {
       title: "Profile",
       path: "/profile",
       icon: User,
-    },
-    {
-      title: "Settings",
-      path: "/settings",
-      icon: Settings,
-    },
-    {
-      title: "Admin Dashboard",
-      path: "/admin",
-      icon: ShieldCheck,
-    },
+    }
+   
   ];
 
   const handleLogout = () => {

@@ -32,10 +32,15 @@ const Sidebar = () => {
       icon: Bell,
     },
     {
-      title: "Profile",
-      path: "/profile",
-      icon: User,
-    }
+  title: "Chat with AI",
+  path: "/chat",
+  icon: Bot,
+},
+{
+  title: "Profile",
+  path: "/profile",
+  icon: User,
+},
    
   ];
 

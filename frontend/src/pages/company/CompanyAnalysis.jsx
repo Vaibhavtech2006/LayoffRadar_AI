@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../../components/dashboard/Sidebar";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 const RANGES = ["1D", "5D", "1M", "6M", "1Y", "5Y"];
 
 // Fallback curve generator anchored to real 30d/90d returns if Yahoo API is blocked
